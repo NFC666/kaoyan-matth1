@@ -18,6 +18,23 @@
 - 有第一类间断点的函数**没有**原函数（导数不可能有第一类间断点）
 - 初等函数在其定义区间内必有原函数（因为初等函数在其定义区间内连续）
 
+**重要辨析**：原函数存在 $\neq$ 原函数是初等函数。连续函数必存在原函数，但原函数**未必是初等函数**。
+
+以下"积不出"的积分（原函数不是初等函数）在考研中反复作为干扰项出现：
+
+| 积不出的积分 | 备注 |
+|-------------|------|
+| $\displaystyle\int e^{-x^2}\,dx$ | 高斯积分（误差函数） |
+| $\displaystyle\int e^{x^2}\,dx$ | 指数平方型 |
+| $\displaystyle\int \frac{\sin x}{x}\,dx$ | 正弦积分 $\text{Si}(x)$ |
+| $\displaystyle\int \frac{\cos x}{x}\,dx$ | 余弦积分 $\text{Ci}(x)$ |
+| $\displaystyle\int \sin(x^2)\,dx,\;\int \cos(x^2)\,dx$ | 菲涅尔积分 |
+| $\displaystyle\int \frac{1}{\ln x}\,dx$ | 对数积分 $\text{li}(x)$ |
+| $\displaystyle\int \frac{e^x}{x}\,dx$ | 指数积分 $\text{Ei}(x)$ |
+| $\displaystyle\int \sqrt{1-k^2\sin^2 x}\,dx$ | 椭圆积分（第二类） |
+
+> ⚠️ **考研实战意义**：考试中若遇到含上述形式的被积函数，99% 的情况是——换元/分部/变形后该项被消去，或者题目的解法根本不需要求出该积分的初等原函数。**不要死磕"积不出来"的积分。**
+
 **定义（不定积分）**：$f(x)$ 在区间 $I$ 上的全体原函数称为 $f(x)$ 在 $I$ 上的不定积分，记作：
 
 $$\int f(x)\,dx = F(x) + C$$
@@ -48,17 +65,17 @@ $$\int f(x)\,dx = F(x) + C$$
 
 **扩展积分公式（高频）**：
 
-| 公式 | 使用频率 |
-|------|---------|
-| $\displaystyle\int \tan x\,dx = -\ln\vert\cos x\vert + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \cot x\,dx = \ln\vert\sin x\vert + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \sec x\,dx = \ln\vert\sec x + \tan x\vert + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \csc x\,dx = \ln\vert\csc x - \cot x\vert + C$ | ⭐⭐ |
-| $\displaystyle\int \frac{1}{a^2 + x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \frac{1}{\sqrt{a^2 - x^2}}\,dx = \arcsin\frac{x}{a} + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \frac{1}{x^2 - a^2}\,dx = \frac{1}{2a}\ln\left\vert\frac{x-a}{x+a}\right\vert + C$ | ⭐⭐ |
-| $\displaystyle\int \frac{1}{\sqrt{x^2 \pm a^2}}\,dx = \ln\left\vert x + \sqrt{x^2 \pm a^2}\right\vert + C$ | ⭐⭐ |
-| $\displaystyle\int \sqrt{a^2 - x^2}\,dx = \frac{a^2}{2}\arcsin\frac{x}{a} + \frac{x}{2}\sqrt{a^2 - x^2} + C$ | ⭐⭐ |
+| 公式                                                                                                           | 使用频率 |
+| ------------------------------------------------------------------------------------------------------------ | ---- |
+| $\displaystyle\int \tan x\,dx = -\ln\vert\cos x\vert + C$                                                    | ⭐⭐⭐  |
+| $\displaystyle\int \cot x\,dx = \ln\vert\sin x\vert + C$                                                     | ⭐⭐⭐  |
+| $\displaystyle\int \sec x\,dx = \ln\vert\sec x + \tan x\vert + C$                                            | ⭐⭐⭐  |
+| $\displaystyle\int \csc x\,dx = \ln\vert\csc x - \cot x\vert + C$                                            | ⭐⭐   |
+| $\displaystyle\int \frac{1}{a^2 + x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C$                              | ⭐⭐⭐  |
+| $\displaystyle\int \frac{1}{\sqrt{a^2 - x^2}}\,dx = \arcsin\frac{x}{a} + C$                                  | ⭐⭐⭐  |
+| $\displaystyle\int \frac{1}{x^2 - a^2}\,dx = \frac{1}{2a}\ln\left\vert\frac{x-a}{x+a}\right\vert + C$        | ⭐⭐   |
+| $\displaystyle\int \frac{1}{\sqrt{x^2 \pm a^2}}\,dx = \ln\left\vert x + \sqrt{x^2 \pm a^2}\right\vert + C$   | ⭐⭐   |
+| $\displaystyle\int \sqrt{a^2 - x^2}\,dx = \frac{a^2}{2}\arcsin\frac{x}{a} + \frac{x}{2}\sqrt{a^2 - x^2} + C$ | ⭐⭐   |
 
 #### 三、不定积分的性质
 
@@ -409,6 +426,14 @@ $\int x\arctan x\,dx = \frac{1}{2}\int \arctan x\,d(x^2+1)$（凑微分小技巧
 
 - **错误表现**：$x^3-1$ 只拆成 $(x-1)(x^2+x+1)$ 但不知道 $x^2+x+1$ 是否可约
 - **正确理解**：$x^2+x+1$ 判别式 $\Delta = 1 - 4 = -3 < 0$，在实数域不可约 → 对应部分分式为 $\frac{Ax+B}{x^2+x+1}$
+
+### ❌ 错误 9：把"积不出"当成了"不可积"
+
+- **错误表现**：遇到 $\int e^{-x^2}dx$ 就说"这个函数不可积"
+- **正确理解**：
+  - **"不可积"**（无原函数）：有第一类间断点的函数 $\to$ 原函数不存在
+  - **"积不出"**（非初等原函数）：函数连续且原函数存在，但原函数无法用有限个初等函数表示 $\to$ 如 $\int e^{-x^2}dx$、$\int \frac{\sin x}{x}dx$ 等
+  - 考研中遇到"积不出"的积分，往往通过换元/分部消去，或题目直接给结论，**切勿自以为漏了某个技巧而耗费时间死磕**
 
 ### ❌ 错误 6：三角有理式盲目用万能代换
 
