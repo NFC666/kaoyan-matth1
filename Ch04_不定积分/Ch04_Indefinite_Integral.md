@@ -50,14 +50,14 @@ $$\int f(x)\,dx = F(x) + C$$
 
 | 公式 | 使用频率 |
 |------|---------|
-| $\displaystyle\int \tan x\,dx = -\ln|\cos x| + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \cot x\,dx = \ln|\sin x| + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \sec x\,dx = \ln|\sec x + \tan x| + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \csc x\,dx = \ln|\csc x - \cot x| + C$ | ⭐⭐ |
+| $\displaystyle\int \tan x\,dx = -\ln\vert\cos x\vert + C$ | ⭐⭐⭐ |
+| $\displaystyle\int \cot x\,dx = \ln\vert\sin x\vert + C$ | ⭐⭐⭐ |
+| $\displaystyle\int \sec x\,dx = \ln\vert\sec x + \tan x\vert + C$ | ⭐⭐⭐ |
+| $\displaystyle\int \csc x\,dx = \ln\vert\csc x - \cot x\vert + C$ | ⭐⭐ |
 | $\displaystyle\int \frac{1}{a^2 + x^2}\,dx = \frac{1}{a}\arctan\frac{x}{a} + C$ | ⭐⭐⭐ |
 | $\displaystyle\int \frac{1}{\sqrt{a^2 - x^2}}\,dx = \arcsin\frac{x}{a} + C$ | ⭐⭐⭐ |
-| $\displaystyle\int \frac{1}{x^2 - a^2}\,dx = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| + C$ | ⭐⭐ |
-| $\displaystyle\int \frac{1}{\sqrt{x^2 \pm a^2}}\,dx = \ln|x + \sqrt{x^2 \pm a^2}| + C$ | ⭐⭐ |
+| $\displaystyle\int \frac{1}{x^2 - a^2}\,dx = \frac{1}{2a}\ln\left\vert\frac{x-a}{x+a}\right\vert + C$ | ⭐⭐ |
+| $\displaystyle\int \frac{1}{\sqrt{x^2 \pm a^2}}\,dx = \ln\left\vert x + \sqrt{x^2 \pm a^2}\right\vert + C$ | ⭐⭐ |
 | $\displaystyle\int \sqrt{a^2 - x^2}\,dx = \frac{a^2}{2}\arcsin\frac{x}{a} + \frac{x}{2}\sqrt{a^2 - x^2} + C$ | ⭐⭐ |
 
 #### 三、不定积分的性质
